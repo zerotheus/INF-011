@@ -8,6 +8,13 @@ public class Livro extends Produto {
         isbn = super.codigo;
     }
 
+    public Livro(String codigo, String nome) {
+        super.nome = nome;
+        super.codigo = codigo;
+        isbn = super.codigo;
+        super.preco = 30;
+    }
+
     @Override
     public String getCodigo() {
         return super.codigo;

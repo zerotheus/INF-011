@@ -2,7 +2,22 @@ package Model;
 
 public class Disciplina extends Produto {
 
-    
+    private int cargaHoraria;
+    private double porcentagemConcluida;
+
+    public Disciplina(String codigo, String nome) {
+        super.nome = nome;
+        super.codigo = codigo;
+        super.preco = 60;
+    }
+
+    public double getPorcentagemConcluida() {
+        return porcentagemConcluida;
+    }
+
+    public int getCargaHoraria() {
+        return cargaHoraria;
+    }
 
     @Override
     public String getCodigo() {
