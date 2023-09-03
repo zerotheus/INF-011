@@ -6,6 +6,7 @@ public class Disciplina extends Produto {
     private double porcentagemConcluida;
 
     public Disciplina(String codigo, String nome) {
+        super(codigo, nome);
         super.nome = nome;
         super.codigo = codigo;
         super.preco = 60;

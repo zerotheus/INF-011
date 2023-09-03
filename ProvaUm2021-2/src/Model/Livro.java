@@ -4,11 +4,8 @@ public class Livro extends Produto {
 
     private String isbn;
 
-    public Livro() {
-        isbn = super.codigo;
-    }
-
     public Livro(String codigo, String nome) {
+        super(codigo, nome);
         super.nome = nome;
         super.codigo = codigo;
         isbn = super.codigo;

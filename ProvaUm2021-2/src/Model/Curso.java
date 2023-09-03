@@ -8,11 +8,8 @@ public class Curso extends Produto {
     public List<Livro> livros = new ArrayList<Livro>();
     public List<Disciplina> disciplinas = new ArrayList<Disciplina>();
 
-    public Curso() {
-
-    }
-
-    public Curso(List<Livro> livros, List<Disciplina> disciplinas) {
+    public Curso(String codigo, String nome, List<Livro> livros, List<Disciplina> disciplinas) {
+        super(codigo, nome);
         this.livros = livros;
         this.disciplinas = disciplinas;
     }
