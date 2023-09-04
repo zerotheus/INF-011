@@ -1,5 +1,7 @@
 package Model;
 
+import java.util.Random;
+
 public class Livro extends Produto {
 
     private String isbn;
@@ -8,7 +10,8 @@ public class Livro extends Produto {
         super(codigo, nome);
         super.nome = nome;
         super.codigo = codigo;
-        isbn = super.codigo;
+        Random random = new Random();
+        isbn = Integer.toString(random.nextInt(10000));
         super.preco = 30;
     }
 
@@ -29,6 +32,11 @@ public class Livro extends Produto {
 
     public String getIsbn() {
         return isbn;
+    }
+
+    @Override
+    public String toString() {
+        return "Livro [isbn=" + isbn + "]" + super.toString();
     }
 
 }

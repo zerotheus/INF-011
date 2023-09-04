@@ -35,4 +35,10 @@ public class Disciplina extends Produto {
         return super.preco;
     }
 
+    @Override
+    public String toString() {
+        return "Disciplina [cargaHoraria=" + cargaHoraria + ", porcentagemConcluida=" + porcentagemConcluida + "]"
+                + super.toString();
+    }
+
 }

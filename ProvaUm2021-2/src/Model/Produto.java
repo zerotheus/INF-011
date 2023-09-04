@@ -17,4 +17,9 @@ public abstract class Produto {
 
     public abstract double getPreco();
 
+    @Override
+    public String toString() {
+        return "Produto [codigo=" + codigo + ", nome=" + nome + ", preco=" + preco + "]";
+    }
+
 }
